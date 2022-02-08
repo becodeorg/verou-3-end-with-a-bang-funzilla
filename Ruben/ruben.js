@@ -30,9 +30,10 @@ searchBtn.addEventListener("click", () => {
     let joinedIngredients = ingredientsArray.join();
     console.log(joinedIngredients);
 
-    fetch("https://api.spoonacular.com/recipes/findByIngredients?apiKey=" + Data.SPOONACULAR_API + "&ingredients=" + joinedIngredients)
+    fetch("https://api.spoonacular.com/recipes/findByIngredients?apiKey=" + Data.SPOONACULAR_API + "&number=20&ignorePantry=true&ranking=2&ingredients=" + joinedIngredients)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             for (let i = 0; i < data.length; i++) {
                 const recipeWrapper = document.getElementById("displayRecipes")
                 const recipeLink = createElement("a", "recipeLink", recipeWrapper);
