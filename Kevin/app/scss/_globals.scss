@@ -1,12 +1,12 @@
-/*html{
+html{
     font-size:100%;
     box-sizing: border-box;
 }
-/*inhert box-sizing with wildcard selectors
+// inhert box-sizing with wildcard selectors
 *, *::before, *::after {
     box-sizing: inherit;
 }
-*/
+
 body{
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-
+// Styling for hamburger-menu
 @media(max-width:1300px){
     .hamburger{
         display: block;
