@@ -4,10 +4,11 @@
 }
 
 body {
-    background-image: url(./scott-warman-h4AGlo55tTA-unsplash.jpg);
+    background-image: url(./cork.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Public Sans', sans-serif;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     background-color: #483c30;
     font-size: 1.5rem;
     text-align: center;
+    // background-image: url('/Ruben/Styles/daniel-vogel-PUDQGDlM_V8-unsplash.jpg');
 
     h1 {
         font-weight: 900;
@@ -30,7 +32,7 @@ header {
 }
 
 .navBar {
-    background-color: #483c30e5;
+    background-color: #554739;
     height: fit-content;
     padding: 0 30px;
     padding: 10px 20px;
@@ -58,5 +60,76 @@ header {
         border-radius: 5px;
         border: solid 1px;
         color: rgb(23, 22, 21);
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+
+
+    #bestWineSection {
+        margin-right: 20px;
+        padding: 20px;
+        color: whitesmoke;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #483c30a4;
+        border-radius: 10px;
+
+
+        .bestGrapes {
+            text-decoration: none;
+            color: whitesmoke;
+            cursor: pointer;
+        }
+    }
+
+    #pairedWinesSection {
+        padding: 20px;
+        font-size: 1.5em;
+        color: whitesmoke;
+        background-color: #483c30a4;
+        border-radius: 10px;
+        font-style: italic;
+
+        .pairingTxt {
+            line-height: 1.6;
+        }
+    }
+}
+
+.tips {
+    margin: 20px;
+    padding: 20px 50px;
+    background-color: #483c30a4;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: rgb(233, 227, 227);
+    list-style-position: inside;
+    text-align: center;
+
+    ol {
+        padding-left: 20px;
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #483c30;
+    color: whitesmoke;
+
+    h6 {
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
     }
 }

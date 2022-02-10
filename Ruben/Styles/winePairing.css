@@ -4,10 +4,11 @@
 }
 
 body {
-  background-image: url(./scott-warman-h4AGlo55tTA-unsplash.jpg);
+  background-image: url(./cork.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Public Sans', sans-serif;
 }
 
 header {
@@ -30,7 +31,7 @@ header h2 {
 }
 
 .navBar {
-  background-color: #483c30e5;
+  background-color: #554739;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -60,5 +61,84 @@ header h2 {
   border-radius: 5px;
   border: solid 1px;
   color: #171615;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin: 20px;
+}
+
+main #bestWineSection {
+  margin-right: 20px;
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #483c30a4;
+  border-radius: 10px;
+}
+
+main #bestWineSection .bestGrapes {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+main #pairedWinesSection {
+  padding: 20px;
+  font-size: 1.5em;
+  color: whitesmoke;
+  background-color: #483c30a4;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+main #pairedWinesSection .pairingTxt {
+  line-height: 1.6;
+}
+
+.tips {
+  margin: 20px;
+  padding: 20px 50px;
+  background-color: #483c30a4;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #e9e3e3;
+  list-style-position: inside;
+  text-align: center;
+}
+
+.tips ol {
+  padding-left: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #483c30;
+  color: whitesmoke;
+}
+
+footer h6 {
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=winePairing.css.map */
