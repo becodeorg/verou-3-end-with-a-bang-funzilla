@@ -58,6 +58,7 @@ searchBtn.addEventListener("click", () => {
                             const missingListItem = createElement("li", "missingListItem", missingIngrList);
                             missingListItem.innerHTML = data[i].missedIngredients[x].name;
                         } else {
+                            ingredientsArray = [];
                             return
                         }
                     }
@@ -65,6 +66,7 @@ searchBtn.addEventListener("click", () => {
                         const moreMissingItems = createElement("li", "moreMissingItems", missingIngrList);
                         moreMissingItems.innerHTML = "& More, see recipe."
                     }
+                    ingredientsArray = [];
                 }
             }
         })
