@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./inigo-de-la-maza-s285sDw5Ikc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Public Sans',
+        sans-serif;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #483c30;
+    font-size: 1.5rem;
+    text-align: center;
+
+    h1 {
+        font-weight: 900;
+        color: rgb(248, 247, 241);
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: #ff7053;
+        padding-top: 5px;
+    }
+}
+
+.navBar {
+    background-color: #483c30e5;
+    height: 30px;
+    padding: 0 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    #sideNav {
+        border-radius: 10px;
+        margin-left: 20px;
+        width: 35vw;
+        height: 70vh;
+        background-color: #705840b4;
+        margin-top: 20px;
+
+        #searchBar {
+            margin: 1vw;
+            padding: 10px;
+            width: 20vw;
+            border-radius: 5px;
+            border: solid 1px;
+        }
+
+        #addBtn {
+            width: 11vw;
+            padding: 10px;
+            border-radius: 5px;
+            border: solid 1px;
+            color: rgb(23, 22, 21);
+        }
+
+        #ingredientsList {
+            border-radius: 10px;
+            width: 33vw;
+            margin: 0 1vw;
+            height: 50vh;
+            color: rgb(23, 22, 21);
+            background-color: #614f34e1;
+
+            li {
+                font-style: italic;
+                padding-top: 10px;
+                margin-left: 40px;
+                color: whitesmoke;
+            }
+        }
+
+        #searchBtn {
+            width: 33vw;
+            margin: 1vw;
+            padding: 10px;
+            font-size: large;
+            color: rgb(23, 22, 21);
+            font-weight: 500;
+            border-radius: 5px;
+            border: solid 1px;
+        }
+    }
+
+    #displayRecipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 250px);
+        justify-content: center;
+        width: 65vw;
+
+        .recipeLink {
+            text-decoration: none;
+            color: rgb(23, 22, 21);
+
+            .card {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 20px;
+
+                .topPart {
+                    width: 220px;
+                    height: auto;
+                    border-radius: 15px 15px 0 0;
+                }
+
+                .infoPart {
+                    width: 200px;
+                    background-color: rgba(234, 201, 151, 0.9);
+                    text-align: center;
+                    display: 280px;
+                    height: 150px;
+                    border-radius: 0 0 15px 15px;
+                    padding: 10px;
+
+                    .recipeTitle {
+                        padding-bottom: 10px;
+                    }
+
+                    .missingIngrList {
+                        list-style-type: none;
+                        padding-bottom: 5px;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition-duration: 0.6s;
+    box-shadow: 10px 10px 15px 0px #463c2eb7;
+    border-radius: 15px;
+}
+
+.card:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.6s;
+}

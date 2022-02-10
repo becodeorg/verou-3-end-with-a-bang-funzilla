@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(./scott-warman-h4AGlo55tTA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #483c30;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 900;
+  color: #f8f7f1;
+}
+
+header h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff7053;
+  padding-top: 5px;
+}
+
+.navBar {
+  background-color: #483c30e5;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 30px;
+  padding: 10px 20px;
+}
+
+.navBar .allLinks {
+  margin-bottom: 10px;
+}
+
+.navBar .allLinks a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.navBar #searchBar {
+  padding: 10px;
+  width: 80vw;
+  border-radius: 5px;
+  border: solid 1px;
+}
+
+.navBar #searchBtn {
+  width: 15vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  color: #171615;
+}
+/*# sourceMappingURL=winePairing.css.map */

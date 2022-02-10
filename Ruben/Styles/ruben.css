@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./inigo-de-la-maza-s285sDw5Ikc-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Public Sans', sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #483c30;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 900;
+  color: #f8f7f1;
+}
+
+header h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff7053;
+  padding-top: 5px;
+}
+
+.navBar {
+  background-color: #483c30e5;
+  height: 30px;
+  padding: 0 30px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main #sideNav {
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 35vw;
+  height: 70vh;
+  background-color: #705840b4;
+  margin-top: 20px;
+}
+
+main #sideNav #searchBar {
+  margin: 1vw;
+  padding: 10px;
+  width: 20vw;
+  border-radius: 5px;
+  border: solid 1px;
+}
+
+main #sideNav #addBtn {
+  width: 11vw;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  color: #171615;
+}
+
+main #sideNav #ingredientsList {
+  border-radius: 10px;
+  width: 33vw;
+  margin: 0 1vw;
+  height: 50vh;
+  color: #171615;
+  background-color: #614f34e1;
+}
+
+main #sideNav #ingredientsList li {
+  font-style: italic;
+  padding-top: 10px;
+  margin-left: 40px;
+  color: whitesmoke;
+}
+
+main #sideNav #searchBtn {
+  width: 33vw;
+  margin: 1vw;
+  padding: 10px;
+  font-size: large;
+  color: #171615;
+  font-weight: 500;
+  border-radius: 5px;
+  border: solid 1px;
+}
+
+main #displayRecipes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 250px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65vw;
+}
+
+main #displayRecipes .recipeLink {
+  text-decoration: none;
+  color: #171615;
+}
+
+main #displayRecipes .recipeLink .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 20px;
+}
+
+main #displayRecipes .recipeLink .card .topPart {
+  width: 220px;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+main #displayRecipes .recipeLink .card .infoPart {
+  width: 200px;
+  background-color: rgba(234, 201, 151, 0.9);
+  text-align: center;
+  display: 280px;
+  height: 150px;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+}
+
+main #displayRecipes .recipeLink .card .infoPart .recipeTitle {
+  padding-bottom: 10px;
+}
+
+main #displayRecipes .recipeLink .card .infoPart .missingIngrList {
+  list-style-type: none;
+  padding-bottom: 5px;
+  font-style: italic;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-box-shadow: 10px 10px 15px 0px #463c2eb7;
+          box-shadow: 10px 10px 15px 0px #463c2eb7;
+  border-radius: 15px;
+}
+
+.card:not(:hover) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+}
+/*# sourceMappingURL=ruben.css.map */
