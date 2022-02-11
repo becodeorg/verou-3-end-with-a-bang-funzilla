@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image:
+    background-image: url(/Nicolas/quizApp/images/questionMark.jpg);
     font-family: 'Gill Sans', sans-serif;
     margin: 0;
     min-height: 100vh;
