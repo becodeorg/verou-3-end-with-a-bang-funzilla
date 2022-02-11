@@ -121,61 +121,61 @@ a {
 
 @-webkit-keyframes colorChanger {
   0% {
-    background-color: #a76464;
+    background-color: rgba(167, 100, 100, 0.6);
   }
   25% {
-    background-color: #c2c247;
+    background-color: rgba(194, 194, 71, 0.6);
   }
   50% {
-    background-color: #6060a0;
+    background-color: rgba(96, 96, 160, 0.6);
   }
   75% {
-    background-color: #307730;
+    background-color: rgba(48, 119, 48, 0.6);
   }
   100% {
-    background-color: #a76464;
+    background-color: rgba(167, 100, 100, 0.6);
   }
 }
 
 @keyframes colorChanger {
   0% {
-    background-color: #a76464;
+    background-color: rgba(167, 100, 100, 0.6);
   }
   25% {
-    background-color: #c2c247;
+    background-color: rgba(194, 194, 71, 0.6);
   }
   50% {
-    background-color: #6060a0;
+    background-color: rgba(96, 96, 160, 0.6);
   }
   75% {
-    background-color: #307730;
+    background-color: rgba(48, 119, 48, 0.6);
   }
   100% {
-    background-color: #a76464;
+    background-color: rgba(167, 100, 100, 0.6);
   }
 }
 
 @-webkit-keyframes slideIn {
   0% {
-    left: 0%;
+    left: 5%;
   }
   50% {
-    left: 15%;
+    left: 10%;
   }
   100% {
-    left: 0%;
+    left: 5%;
   }
 }
 
 @keyframes slideIn {
   0% {
-    left: 0%;
+    left: 5%;
   }
   50% {
-    left: 15%;
+    left: 10%;
   }
   100% {
-    left: 0%;
+    left: 5%;
   }
 }
 

@@ -101,37 +101,37 @@ a {
 
 @keyframes colorChanger {
   0% {
-    background-color: rgb(167, 100, 100);
+    background-color: rgba(167, 100, 100, 0.6);
   }
 
   25% {
-    background-color: rgb(194, 194, 71);
+    background-color: rgba(194, 194, 71, 0.6);
   }
 
   50% {
-    background-color: rgb(96, 96, 160);
+    background-color: rgba(96, 96, 160, 0.6);
   }
 
   75% {
-    background-color: rgb(48, 119, 48);
+    background-color: rgba(48, 119, 48, 0.6);
   }
 
   100% {
-    background-color: rgb(167, 100, 100);
+    background-color: rgba(167, 100, 100, 0.6);
   }
 }
 
 @keyframes slideIn {
   0% {
-    left: 0%;
+    left: 5%;
   }
 
   50% {
-    left: 15%;
+    left: 10%;
   }
 
   100% {
-    left: 0%;
+    left: 5%;
   }
 }
 
