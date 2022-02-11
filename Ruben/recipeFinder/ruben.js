@@ -5,8 +5,6 @@ const addBtn = document.getElementById("addBtn")
 const searchBtn = document.getElementById("searchBtn");
 let ingredientsArray = [];
 
-
-
 addBtn.addEventListener("click", () => {
     const searchBar = document.getElementById("searchBar");
     const searchInput = searchBar.value.toLowerCase();
@@ -15,7 +13,6 @@ addBtn.addEventListener("click", () => {
     ingredientsList.appendChild(newListItem)
 
     ingredientsArray.push(searchInput)
-
     console.log(ingredientsArray);
 })
 

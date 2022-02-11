@@ -30,9 +30,7 @@ searchBtn.addEventListener("click", () => {
             }
             const pairingTxt = createElement("p", "pairingTxt", pairedWinesSection);
             const pairingtekst = data.pairingText
-            // console.log(pairingtekst);
-            // pairingtekst.replaceAll(".", ". <br>");
-            // console.log(pairingtekst);
+            console.log(pairingtekst);
             pairingTxt.innerHTML = pairingtekst;
             
         })
