@@ -2,44 +2,49 @@
 /* based on this design */
 
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
+    
 
 }
 
 body{
-    background-image: url(/Nicolas/quizApp/images/questionMark.jpg);
-    font-family: 'Gill Sans', sans-serif;
+    background-image: url(/Nicolas/quizApp/images/shufflingCards.jpg);
+    background-size:cover;
+    font-family: 'Crete Round', serif;
     margin: 0;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    padding: 2rem;
     display: flex;
+    align-items: center;
 }
 
 .quiz-container{
-    background-color: hotpink;
-    box-shadow: 0 0 5p10px rgba(100, 100, 100, 0.1);
+    background-color: rgba(121, 112, 116, 0.561);
+    box-shadow: 0 0 10 10px rgba(100, 100, 100,1);
     display: flex;
-    width: 600px;
+    width:400px;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     max-width: 100%;
 }
 
 button{
-    background-color: green;
+    background-color: rgba(177, 71, 71, 0.5);
     color: white;
-    display: block;
+    display:block;
     width: 100%;
     font-family: inherit;
-    padding: 1rem;
-    font-size: 1.3rem;
-    border: none;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border: 10px, red;
     cursor: pointer;
+    
 }
 
 button:hover{
-    background-color: darkgreen;
+    background-color: rgba(219, 39, 39, 0.685);
 }
 
 button:focus{
@@ -48,7 +53,7 @@ button:focus{
 }
 
 .quiz-header{
-    padding: 4rem;
+    padding: 2rem;
 }
 
 h2{
@@ -63,7 +68,9 @@ ul{
 }
 
 ul li{
-    font-size: 1.1rem;
+    font-size: 1.1rem ;
+    display: flex;
+    font-weight: bold;
 }
 
 ul li label{
