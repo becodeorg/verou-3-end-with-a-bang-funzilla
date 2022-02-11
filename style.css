@@ -4,7 +4,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -40,11 +42,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 24px;
 }
 
@@ -72,6 +74,109 @@ a {
 
 .nav-link:hover {
   color: dodgerblue;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+#joke-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#joke-container #jokeBtn {
+  font-family: 'Public Sans', sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-animation-name: colorChanger;
+          animation-name: colorChanger;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#joke-container #jokeTxt {
+  padding: 20px;
+  width: 80vw;
+  -webkit-animation: slideIn;
+          animation: slideIn;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes colorChanger {
+  0% {
+    background-color: #a76464;
+  }
+  25% {
+    background-color: #c2c247;
+  }
+  50% {
+    background-color: #6060a0;
+  }
+  75% {
+    background-color: #307730;
+  }
+  100% {
+    background-color: #a76464;
+  }
+}
+
+@keyframes colorChanger {
+  0% {
+    background-color: #a76464;
+  }
+  25% {
+    background-color: #c2c247;
+  }
+  50% {
+    background-color: #6060a0;
+  }
+  75% {
+    background-color: #307730;
+  }
+  100% {
+    background-color: #a76464;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 15%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 15%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 @media (max-width: 800px) {

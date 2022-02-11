@@ -1,43 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-    <body>
-        <header>
-            <nav class="nav-bar">
-                <a href="#" class="title">Funzilla</a> 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                         <a class="nav-link" href="/Kevin/kevin.html">Kevin</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="/Nicolas/countdown/countdown.html">countdown</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Nicolas/quizApp/quiz.html">quizApp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Ruben/recipeFinder/ruben.html">recipeFinder</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="/Ruben/winePairing/winePairing.html">WinePairing</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <nav>
-                    
-        </nav>
-        <main>
-           
-        </main>
-        <footer>
+    <title>Funzilla</title>
 
-        </footer>
-    </body>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="/My project (2).png" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="title">Funzilla</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Kevin/kevin.html">Kevin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Nicolas/countdown/countdown.html">countdown</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Nicolas/quizApp/quiz.html">quizApp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Ruben/recipeFinder/ruben.html">recipeFinder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Ruben/winePairing/winePairing.html">WinePairing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div id="joke-container">
+            <button id="jokeBtn">Joke Generator</button>
+            <h2 id="jokeTxt"></h2>
+        </div>
+
+    </main>
+    <footer>
+
 </html>
